@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-Object Detection-low visibility traffic scene
-========
+# object-dection-low-visibility
+
 
 ![language](https://img.shields.io/badge/language-python-blue)![demo](https://img.shields.io/badge/demo-gradio-yellow)
 
@@ -8,21 +7,21 @@ Object Detection-low visibility traffic scene
 
 ## Introduction
 
-This project is based **on [YOLO]([ultralytics/ultralytics: NEW - YOLOv8 🚀 in PyTorch > ONNX > OpenVINO > CoreML > TFLite (github.com)](https://github.com/ultralytics/ultralytics?tab=readme-ov-file))and [DETR]([facebookresearch/detr: End-to-End Object Detection with Transformers (github.com)](https://github.com/facebookresearch/detr))** ,using  the Exdark data set for fine-tuning training. It is used to predict objects in traffic scenes (especially in low visibility). The repositories contains data set format processing files, running scripts and code to build **[gradio]([gradio-app/gradio: Build and share delightful machine learning apps, all in Python. 🌟 Star to support our work! (github.com)](https://github.com/gradio-app/gradio))**.
+This project is based on [YOLO](https://github.com/ultralytics/ultralytics?tab=readme-ov-file)and [DETR](https://github.com/facebookresearch/detr) ,using  the Exdark data set for fine-tuning training. It is used to predict objects in traffic scenes (especially in low visibility). The repositories contains data set format processing files, running scripts and code to build [gradio](https://github.com/gradio-app/gradio).
 
 ****
 
-![](.\scripts\example_images\contract.png)
+![](./scripts/example_images/contract.png)
 
 ## Structure
 
 **DETR**
 
-![DETR](./scripts\example_images\DETR.png)
+![DETR](./scripts/example_images/DETR.png)
 
 **YOLOv8**
 
-![](.\scripts\example_images\yolov8.jpeg)
+![](./scripts/example_images/yolov8.jpeg)
 
 
 
@@ -67,7 +66,7 @@ mAP50 and mAP50-95 computing on part of val Exdark datasets.
 
 ## DataSet Perparation
 
-[Exdark Datasets]([cs-chan/Exclusively-Dark-Image-Dataset: Exclusively Dark (ExDARK) dataset which to the best of our knowledge, is the largest collection of low-light images taken in very low-light environments to twilight (i.e 10 different conditions) to-date with image class and object level annotations. (github.com)](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset))
+[Exdark Datasets](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset)
 
 In the original ExDark data set, there are a total of 12 categories, but our research is to identify driving road condition detection in outdoor situations, so we deleted the unnecessary data and only retained Bicycle, Bus, Car, and Motorbike. , People and Animal these 6 categories. Among them, Animal is merged from the two classes Cat and Dog in the original data set.
 
@@ -98,7 +97,8 @@ pip install ultralytics
 
 
 
-**(optional)**for use gradio, you also need to install gradio.
+**optional** 
+for use gradio, you also need to install gradio.
 
 ```shell
 pip install gradio
@@ -134,9 +134,9 @@ First, download our model or use your own model,place it in **checkpoints** fold
 
 **YOLOv8**:use [yolov8_predict.py](./scripts/yolov8_predict.py),change the pic to your own.
 
-**DETR:**use [detr_predict.py](./scripts/detr_predict.py),change the pic to your own.
+**DETR**:use [detr_predict.py](./scripts/detr_predict.py),change the pic to your own.
 
-**LightValue:**use [lightValuePredict.py](./scripts/lightValuePredict.py)
+**LightValue**:use [lightValuePredict.py](./scripts/lightValuePredict.py)
 
 
 
@@ -149,11 +149,8 @@ cd scripts
 python main.py
 ```
 
-![gradio](D:\python_code\od\scripts\example_images\gradio.png)
+![gradio](./scripts/example_images/gradio.png)
 
 # Contributing
+
 We actively welcome your pull requests! If you have any question, you send mail to 615792775@qq.com or contact we by github :)
-=======
-# object-dection-low-visibility
-This project is based on YOLO and DETR ,using the Exdark datasets for fine-tuning training. It is used to predict objects in traffic scenes (especially in low visibility). The repositories contains data set format processing files, running scripts and code to build gradio.
->>>>>>> 0f3b03101c34905089d8cd16b124e4a6d689373b
