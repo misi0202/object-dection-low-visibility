@@ -1,4 +1,4 @@
-# object-dection-low-visibility
+# Object-Dection-Low-Visibility
 
 
 ![language](https://img.shields.io/badge/language-python-blue)![demo](https://img.shields.io/badge/demo-gradio-yellow)
