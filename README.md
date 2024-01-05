@@ -97,8 +97,8 @@ pip install ultralytics
 
 
 
-**optional** 
-for use gradio, you also need to install gradio.
+(**optional**)
+for using gradio, you also need to install gradio.
 
 ```shell
 pip install gradio
@@ -130,7 +130,7 @@ img_pathDir='../datasets/Exdark/images/val'
 
 ### Predict
 
-First, download our model or use your own model,place it in **checkpoints** folder,rename it to best_yolo.py or best_detr.pth.
+First, download our model or use your own model,place it in **checkpoints** folder,rename it to best_yolo.pt or best_detr.pth.
 
 **YOLOv8**:use [yolov8_predict.py](./scripts/yolov8_predict.py),change the pic to your own.
 
